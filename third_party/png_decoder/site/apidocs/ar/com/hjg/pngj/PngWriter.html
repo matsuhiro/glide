@@ -86,7 +86,7 @@
 <li><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>ar.com.hjg.pngj.PngWriter</li>
+<li>com.bumptech.glide.pngdecoder.PngWriter</li>
 </ul>
 </li>
 </ul>
@@ -136,7 +136,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <td class="colLast"><code><strong><a href="../../../../ar/com/hjg/pngj/PngWriter.html#imgInfo">imgInfo</a></strong></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../ar/com/hjg/pngj/PngWriter.html#pixelsWriter">pixelsWriter</a></strong></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -224,7 +224,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../ar/com/hjg/pngj/PngWriter.html#createPixelsWriter(ar.com.hjg.pngj.ImageInfo)">createPixelsWriter</a></strong>(<a href="../../../../ar/com/hjg/pngj/ImageInfo.html" title="class in ar.com.hjg.pngj">ImageInfo</a>&nbsp;imginfo)</code>
 <div class="block">Factory method for pixels writer.</div>
 </td>
@@ -252,7 +252,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a></code></td>
+<td class="colFirst"><code><a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../ar/com/hjg/pngj/PngWriter.html#getPixelsWriter()">getPixelsWriter</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -373,7 +373,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <ul class="blockList">
 <li class="blockList">
 <h4>pixelsWriter</h4>
-<pre>protected&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a> pixelsWriter</pre>
+<pre>protected&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a> pixelsWriter</pre>
 </li>
 </ul>
 <a name="debuginfo">
@@ -393,7 +393,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PngWriter(java.io.File, ar.com.hjg.pngj.ImageInfo, boolean)">
+<a name="PngWriter(java.io.File, com.bumptech.glide.pngdecoder.ImageInfo, boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -640,7 +640,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <div class="block">Writes the full set of row. The ImageLineSet should contain (allow to acces) imgInfo.rows</div>
 </li>
 </ul>
-<a name="writeRow(ar.com.hjg.pngj.IImageLine, int)">
+<a name="writeRow(com.bumptech.glide.pngdecoder.IImageLine, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -666,7 +666,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <ul class="blockList">
 <li class="blockList">
 <h4>createPixelsWriter</h4>
-<pre>protected&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a>&nbsp;createPixelsWriter(<a href="../../../../ar/com/hjg/pngj/ImageInfo.html" title="class in ar.com.hjg.pngj">ImageInfo</a>&nbsp;imginfo)</pre>
+<pre>protected&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a>&nbsp;createPixelsWriter(<a href="../../../../ar/com/hjg/pngj/ImageInfo.html" title="class in ar.com.hjg.pngj">ImageInfo</a>&nbsp;imginfo)</pre>
 <div class="block">Factory method for pixels writer. This will be called once at the moment at start writing a set of IDAT chunks
  (typically once in a normal PNG)
  
@@ -681,7 +681,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getPixelsWriter</h4>
-<pre>public final&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in ar.com.hjg.pngj.pixels">PixelsWriter</a>&nbsp;getPixelsWriter()</pre>
+<pre>public final&nbsp;<a href="../../../../ar/com/hjg/pngj/pixels/PixelsWriter.html" title="class in com.bumptech.glide.pngdecoder.pixels">PixelsWriter</a>&nbsp;getPixelsWriter()</pre>
 </li>
 </ul>
 <a name="getDebuginfo()">

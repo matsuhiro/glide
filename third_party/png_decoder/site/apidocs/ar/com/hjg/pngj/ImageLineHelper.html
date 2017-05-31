@@ -86,7 +86,7 @@
 <li><a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>ar.com.hjg.pngj.ImageLineHelper</li>
+<li>com.bumptech.glide.pngdecoder.ImageLineHelper</li>
 </ul>
 </li>
 </ul>
@@ -385,7 +385,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
              byte&nbsp;v)</pre>
 </li>
 </ul>
-<a name="palette2rgb(ar.com.hjg.pngj.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
+<a name="palette2rgb(com.bumptech.glide.pngdecoder.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -400,7 +400,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <dt><span class="strong">Returns:</span></dt><dd>R G B (A), one sample 0-255 per array element. Ready for pngw.writeRowInt()</dd></dl>
 </li>
 </ul>
-<a name="palette2rgba(ar.com.hjg.pngj.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
+<a name="palette2rgba(com.bumptech.glide.pngdecoder.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -415,7 +415,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <dt><span class="strong">Returns:</span></dt><dd>R G B (A), one sample 0-255 per array element. Ready for pngw.writeRowInt()</dd></dl>
 </li>
 </ul>
-<a name="palette2rgb(ar.com.hjg.pngj.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, int[])">
+<a name="palette2rgb(com.bumptech.glide.pngdecoder.ImageLineInt, ar.com.hjg.pngj.chunks.PngChunkPLTE, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -426,7 +426,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                 int[]&nbsp;buf)</pre>
 </li>
 </ul>
-<a name="convert2rgba(ar.com.hjg.pngj.IImageLineArray, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
+<a name="convert2rgba(com.bumptech.glide.pngdecoder.IImageLineArray, ar.com.hjg.pngj.chunks.PngChunkPLTE, ar.com.hjg.pngj.chunks.PngChunkTRNS, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -449,7 +449,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <div class="block">Just for basic info or debugging. Shows values for first and last pixel. Does not include alpha</div>
 </li>
 </ul>
-<a name="getPixelRGB8(ar.com.hjg.pngj.IImageLine, int)">
+<a name="getPixelRGB8(com.bumptech.glide.pngdecoder.IImageLine, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -460,7 +460,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
 <div class="block">integer packed R G B only for bitdepth=8! (does not check!)</div>
 </li>
 </ul>
-<a name="getPixelARGB8(ar.com.hjg.pngj.IImageLine, int)">
+<a name="getPixelARGB8(com.bumptech.glide.pngdecoder.IImageLine, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -470,7 +470,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                 int&nbsp;column)</pre>
 </li>
 </ul>
-<a name="setPixelsRGB8(ar.com.hjg.pngj.ImageLineInt, int[])">
+<a name="setPixelsRGB8(com.bumptech.glide.pngdecoder.ImageLineInt, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -480,7 +480,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                  int[]&nbsp;rgb)</pre>
 </li>
 </ul>
-<a name="setPixelRGB8(ar.com.hjg.pngj.ImageLineInt, int, int, int, int)">
+<a name="setPixelRGB8(com.bumptech.glide.pngdecoder.ImageLineInt, int, int, int, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -493,7 +493,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                 int&nbsp;b)</pre>
 </li>
 </ul>
-<a name="setPixelRGB8(ar.com.hjg.pngj.ImageLineInt, int, int)">
+<a name="setPixelRGB8(com.bumptech.glide.pngdecoder.ImageLineInt, int, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -504,7 +504,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                 int&nbsp;rgb)</pre>
 </li>
 </ul>
-<a name="setPixelsRGBA8(ar.com.hjg.pngj.ImageLineInt, int[])">
+<a name="setPixelsRGBA8(com.bumptech.glide.pngdecoder.ImageLineInt, int[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -514,7 +514,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                   int[]&nbsp;rgb)</pre>
 </li>
 </ul>
-<a name="setPixelRGBA8(ar.com.hjg.pngj.ImageLineInt, int, int, int, int, int)">
+<a name="setPixelRGBA8(com.bumptech.glide.pngdecoder.ImageLineInt, int, int, int, int, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -528,7 +528,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                  int&nbsp;a)</pre>
 </li>
 </ul>
-<a name="setPixelRGBA8(ar.com.hjg.pngj.ImageLineInt, int, int)">
+<a name="setPixelRGBA8(com.bumptech.glide.pngdecoder.ImageLineInt, int, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -539,7 +539,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                  int&nbsp;rgb)</pre>
 </li>
 </ul>
-<a name="setValD(ar.com.hjg.pngj.ImageLineInt, int, double)">
+<a name="setValD(com.bumptech.glide.pngdecoder.ImageLineInt, int, double)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -564,7 +564,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
            double&nbsp;dy)</pre>
 </li>
 </ul>
-<a name="int2double(ar.com.hjg.pngj.ImageLineInt, int)">
+<a name="int2double(com.bumptech.glide.pngdecoder.ImageLineInt, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -574,7 +574,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                 int&nbsp;p)</pre>
 </li>
 </ul>
-<a name="int2doubleClamped(ar.com.hjg.pngj.ImageLineInt, int)">
+<a name="int2doubleClamped(com.bumptech.glide.pngdecoder.ImageLineInt, int)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -584,7 +584,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
                        int&nbsp;p)</pre>
 </li>
 </ul>
-<a name="double2int(ar.com.hjg.pngj.ImageLineInt, double)">
+<a name="double2int(com.bumptech.glide.pngdecoder.ImageLineInt, double)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -594,7 +594,7 @@ extends <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.h
              double&nbsp;d)</pre>
 </li>
 </ul>
-<a name="double2intClamped(ar.com.hjg.pngj.ImageLineInt, double)">
+<a name="double2intClamped(com.bumptech.glide.pngdecoder.ImageLineInt, double)">
 <!--   -->
 </a>
 <ul class="blockList">
