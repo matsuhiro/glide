@@ -1,10 +1,7 @@
 package com.bumptech.glide.samples.giphy;
 
 import android.app.Activity;
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
-import android.content.Intent;
+import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,10 +9,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
 import com.bumptech.glide.ListPreloader;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader;
 import com.bumptech.glide.util.ViewPreloadSizeProvider;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -111,14 +110,17 @@ public class MainActivity extends Activity implements Api.Monitor {
       holder.gifView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-          ClipboardManager clipboard =
-              (ClipboardManager) activity.getSystemService(Context.CLIPBOARD_SERVICE);
-          ClipData clip =
-              ClipData.newPlainText("giphy_url", result.images.fixed_height.url);
-          clipboard.setPrimaryClip(clip);
-
-          Intent fullscreenIntent = FullscreenActivity.getIntent(activity, result);
-          activity.startActivity(fullscreenIntent);
+          if (!(view instanceof ImageView)) {
+            return;
+          }
+          ImageView gifView = (ImageView) view;
+          Drawable drawable = gifView.getDrawable();
+          if (!(drawable instanceof Animatable)) {
+            return;
+          }
+          Animatable gif = (Animatable) drawable;
+          if (gif.isRunning()) gif.stop();
+          else gif.start();
         }
       });
 
